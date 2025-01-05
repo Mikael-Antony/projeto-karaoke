@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karaokê</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>Karaokê</h1>
         <nav>
-            <form action="pesquisa">
-                <input type="search" name="pesquisa" id="ipesquisa"><input type="submit" value="pesquisar">
-            </form>
-            <a href="pags/pag-login.html">Login</a>
+            <div id="log"><a href="pags/pag-login.html">Login</a></div>
+            <div id="icn"><span class="material-symbols-outlined">menu</span></div>
         </nav>
     </header>
     <main>
-
+        <section>
+            <div id="buscar">
+                <input type="text" id="videoUrl" placeholder="insira a URL">
+                <button id="loadVideo">pesquisar</button>
+            </div>
+            <div id="videoContainer"></div>
+            <div id="letra"></div>
+        </section>
     </main>
     <footer>
-
+        <!--&copy;Mikael antony-->
     </footer>
+    <script src="script/script.js"></script>
 </body>
 </html>

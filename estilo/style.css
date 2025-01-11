@@ -11,6 +11,8 @@
 
 body {
     overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
 }
 
 header {

@@ -53,9 +53,8 @@ function menut() {
 
         line2.style.width = '0px'
         line2.style.opacity='0'
-
-        line3.style.transform = 'rotate(45deg) translate(-7px, -5.2px)'
         
+        line3.style.transform = 'rotate(45deg) translate(-7px, -5.2px)'
         options.style.transform = 'translate(70vw)'
         mnstt = true
     }

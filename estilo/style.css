@@ -21,7 +21,6 @@ header {
     background-color: var(--header);
     padding: 5px;
 
-    width: 100vw;
     height: 105px;
     
     display: flex;

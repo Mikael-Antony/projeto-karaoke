@@ -32,8 +32,6 @@ menu.addEventListener('click', menut)
 
 function menut() {
 
-    let options = document.getElementById('options')
-
     let line1 = document.getElementById('line1')
     let line2 = document.getElementById('line2')
     let line3 = document.getElementById('line3')

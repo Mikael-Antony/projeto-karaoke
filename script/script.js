@@ -46,17 +46,17 @@ function menut() {
 
         line3.style.transform = ''
 
-        options.style.transform = 'translate(150vw)'
+        options.style.right = '-200px'
         mnstt = false
     } else {
         line1.style.transform = 'rotate(-45deg) translate(-7px, 5.2px)'
-
+        
         line2.style.width = '0px'
         line2.style.opacity='0'
         
         line3.style.transform = 'rotate(45deg) translate(-7px, -5.2px)'
         
-        options.style.transform = 'translate(70vw)'
+        options.style.right = '0px'
         mnstt = true
     }
 }

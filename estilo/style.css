@@ -13,6 +13,8 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-flow: column;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -38,15 +40,15 @@ header > nav {
     justify-content: flex-end;
 }
 
-header > nav > div#menu {
+#menu {
     background-color: white;
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
-}
+    margin-right: 10px;
 
-#menu {
-    display: flex;
+    display: none;
+
     flex-flow: column nowrap;
     justify-content: center;
 }
@@ -62,13 +64,14 @@ div.line {
 #options {
     background-color: var(--header);
     opacity: .9;
-
+    
     position: absolute;
     /*transform: translate(75vw);*/
-    transform: translate(150vw);
+    top: 115px;
+    right: -200px;
 
-    border-radius: 0px 0px 10px 10px;
-    transition: transform 1s;
+    border-radius: 0px 0px 0px 10px;
+    transition: 1s;
 }
 
 #list {
@@ -80,14 +83,14 @@ div.line {
 
 #list > li {
     letter-spacing: 2px;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
     border-radius: 5px;
 
     text-align: center;
 }
 
-#list > li > a {
+.nav-a {
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
@@ -96,7 +99,14 @@ div.line {
     text-decoration: none;
 }
 
-#list > li > a:hover {
+.nav-a:hover {
     background-color: rgb(188, 191, 224);
     color: black;
+    transition: .5s;
+}
+
+@media screen and (max-width: 500px) {
+    #menu {
+        display: flex;
+    }
 }
